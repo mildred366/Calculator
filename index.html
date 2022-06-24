@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Prompt</title>
+    <script>
+        // const a = prompt('Enter A: ')
+        // const o = prompt('Enter Operator: ')
+        // const b = prompt('Enter B: ')
+
+        // switch (o) {
+        //     case "+":
+        //         console.log(a + b);
+        //         break;
+        //     case "-":
+        //         console.log(a - b);
+        //         break;
+        //     case "*":
+        //         console.log(a * b);
+        //         break;
+        //     case "/":
+        //         console.log(a / b);
+        //         break;
+        //     case "%":
+        //         console.log(a % b);
+        //         break;
+        //     default:
+        //         console.log('invalid operator')
+        //         break;
+        // }
+
+        // let text;
+        // let favDrink = prompt("What's your favorite drink?", "Coca-Cola");
+        // switch (favDrink) {
+        //     case "Coca-Cola":
+        //         text = alert("Excellent choice. Coca-Cola is good for your soul.");
+        //         break;
+        //     case "Pepsi":
+        //         text = alert("Pepsi is my favorite too!");
+        //         break;
+        //     case "Sprite":
+        //         text = alert("Really? Are you sure the Sprite is your favorite?");
+        //         break;
+        //     default:
+        //         text = alert("I have never heard of that one..");
+        // }
+
+        let result;
+        let question1 = +prompt("Enter your first number:")
+        let intro = prompt("Please enter the operation you want to perform:", "Eg. +, -, /, *, %")
+        let question2 = +prompt("Enter a second number: ")
+        switch (intro) {
+            case "+":
+                result = alert("Result is: " + (question1 + question2));
+                break;
+            case "-":
+                result = alert("Result is: " + (question1 - question2));
+                break;
+            case "*":
+                result = alert("Result is: " + (question1 * question2));
+                break;
+            case "/":
+                result = alert("Result is: " + (question1 / question2));
+                break;
+            case "%":
+                result = alert("Result is: "(question1 % question2));
+                break;
+            default:
+                result = alert("You have entered an invalid operator");
+                break;
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
